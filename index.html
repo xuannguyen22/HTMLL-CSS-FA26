@@ -2,10 +2,63 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Bài tập HTML CSS</title>
+    <title>Sơ đồ khung bố cục trang web</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer, main, section, aside, article {
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            height: 100px;
+        }
+
+        main {
+            display: flex;
+            height: 400px;
+            gap: 10px;
+        }
+
+        section {
+            flex: 3;
+        }
+
+        article {
+            height: 120px;
+            margin-top: 15px;
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        footer {
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Xin chào GitHub!</h1>
-    <p>Đây là bài tập của em.</p>
+
+    <header>HEADER</header>
+
+    <main>
+        <section>
+            SECTION
+            <article>ARTICLE</article>
+            <article>ARTICLE</article>
+        </section>
+
+        <aside>ASIDE</aside>
+    </main>
+
+    <footer>FOOTER</footer>
+
 </body>
 </html>
